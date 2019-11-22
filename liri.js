@@ -7,4 +7,6 @@ var spotify = new Spotify(keys.spotify);
 //need to install npm packages
 //Spotify: https://www.npmjs.com/package/node-spotify-api
 //Axios: https://www.npmjs.com/package/axios
+//Moment:
+//DotEnv
 //step 9
