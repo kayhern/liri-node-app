@@ -10,5 +10,5 @@ var spotify = new Spotify(keys.spotify);
 //Spotify: https://www.npmjs.com/package/node-spotify-api
 //Axios: https://www.npmjs.com/package/axios
 //Moment: https://momentjs.com/docs/
-//DotEnv
+//DotEnv: https://www.npmjs.com/package/dotenv
 //step 9
