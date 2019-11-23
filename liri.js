@@ -40,7 +40,6 @@ function theCommands(userData) {
             break;
     }
 };
-console.log("pay attention to me");
 
 //using functionality from this activity: https://harvard.bootcampcontent.com/Harvard-Coding-Boot-Camp/hu-cam-fsf-pt-09-2019-u-c/blob/master/Week_10/01-Activities/17-OMDB_Axios/omdbAxios.js
 //this requires this API with axios: https://app.swaggerhub.com/apis-docs/Bandsintown/PublicAPI/3.0.0
