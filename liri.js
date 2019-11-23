@@ -1,19 +1,17 @@
 //all the requires: dotenv, spotify, keys, axios, 
 require("dotenv").config();
 var moment = require('moment');
-// var Spotify = require('node-spotify-api');
-var keys = require("./keys.js");
+// var keys = require("./apis/keys");
 const axios = require('axios');
 const concert = require("./apis/concert");
-// var spotify = new Spotify(keys.spotify);
+const spotify = require("./apis/spotify");
+
 // const db = require('./dot.env');
 // db.connect({
 // host: process.env.DB_HOST,
 //     username: process.env.DB_USER,
 //     password: process.env.DB_PASS
 // });
-//Spotify: https://www.npmjs.com/package/node-spotify-api
-//Axios: https://www.npmjs.com/package/axios
 //Moment: https://momentjs.com/docs/
 //DotEnv: https://www.npmjs.com/package/dotenv
 
@@ -30,37 +28,25 @@ function theCommands(userData) {
             concert.concertInformation(userInput);
             break;
         case "spotify-this-song":
-            spotSong();
+            spotify.spotSong(userInput);
             break;
         case "movie-this":
-            movieThis();
+            movieThis(userInput);
             break;
         case "do-what-it-says":
-            doThings();
+            doThings(userInput);
             break;
     }
 };
 
-//using functionality from this activity: https://harvard.bootcampcontent.com/Harvard-Coding-Boot-Camp/hu-cam-fsf-pt-09-2019-u-c/blob/master/Week_10/01-Activities/17-OMDB_Axios/omdbAxios.js
-//this requires this API with axios: https://app.swaggerhub.com/apis-docs/Bandsintown/PublicAPI/3.0.0
-//need: vanue name, venue location, date of event
-//date of event will use moment for formatting
-//the API functions
-
-
-// spotify-this-song
-function spotSong() {
-
-};
-
 // movie-this
-function movieThis() {
+function movieThis(userInput) {
 
 };
 
 
 // do-what-it-says
-function doThings() {
+function doThings(userInput) {
 
 };
 
