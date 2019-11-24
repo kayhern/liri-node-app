@@ -11,7 +11,8 @@ How the app is organized:
 How to run the app:
 1. 
 
-Screenshots, gifs or videos of the app functioning:
+Videos of the app functioning:
+concert-this: https://drive.google.com/file/d/10C6r0k9MGO5XdRhdHVChLijzOELaaWdW/view
 
 The technologies used in this app:
 
