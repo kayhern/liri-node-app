@@ -1,5 +1,5 @@
 //all the requires: dotenv, spotify, keys, axios, 
-require("dotenv").config();
+// require("dotenv").config();
 const fs = require("fs");
 //Moment: https://momentjs.com/docs/
 var moment = require('moment');
@@ -7,15 +7,9 @@ var moment = require('moment');
 const axios = require('axios');
 const concert = require("./apis/concert");
 const spotify = require("./apis/spotify");
-
-// const db = require('./dot.env');
-// db.connect({
-// host: process.env.DB_HOST,
-//     username: process.env.DB_USER,
-//     password: process.env.DB_PASS
-// });
-
-//DotEnv: https://www.npmjs.com/package/dotenv
+const movies = require("./apis/movie.js");
+const dotenv = require('dotenv').config();
+var omdbKey = trilogy;
 
 //this is the command
 var userData = process.argv[2];
@@ -47,17 +41,12 @@ function theCommands(userData, userInput) {
             spotify.spotSong(userInput);
             break;
         case "movie-this":
-            movieThis(userInput);
+            movies.movieThis(userInput);
             break;
         case "do-what-it-says":
             doThings(userInput);
             break;
     }
-};
-
-// movie-this
-function movieThis(userData, userInput) {
-
 };
 
 //the commands function
