@@ -15,15 +15,14 @@ function movieThis(userInput) {
     request(queryURL, function (error, response, body) {
         if (!error && response.statusCode == 200) {
             let body = JSON.parse(body);
-            console.log("Title: " + body.Title);
-            console.log("Release Year: " + body.Year);
-            console.log("IMdB Rating: " + body.imdbRating);
+            console.log("Movie Title: " + body.Title);
+            console.log("Year: " + body.Year);
+            console.log("IMDB Rating: " + body.imdbRating);
+            console.log("Rotten Tomatoes Rating: " + body.tomatoRating);
             console.log("Country: " + body.Country);
             console.log("Language: " + body.Language);
             console.log("Plot: " + body.Plot);
             console.log("Actors: " + body.Actors);
-            console.log("Rotten Tomatoes Rating: " + body.tomatoRating);
-            console.log("Rotten Tomatoes URL: " + body.tomatoURL);
         } else {
             console.log("There's an error" + error);
         }

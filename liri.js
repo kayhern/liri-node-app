@@ -7,7 +7,7 @@ var moment = require('moment');
 const axios = require('axios');
 const concert = require("./apis/concert");
 const spotify = require("./apis/spotify");
-const movies = require("./apis/movie.js");
+const movies = require("./apis/movie");
 const dotenv = require('dotenv').config();
 var omdbKey = trilogy;
 

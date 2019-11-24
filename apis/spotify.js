@@ -1,7 +1,7 @@
-// console.log("spotify loaded");
+console.log("spotify loaded");
 const axios = require("axios");
-const colors = require("colors")
-keys = require("./keys.js");
+const colors = require("colors");
+const keys = require("./apis/keys.js");
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 
