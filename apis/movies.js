@@ -6,6 +6,7 @@ const db = require('db');
 const dotenv = require('dotenv').config();
 var omdbKey = trilogy;
 //http://www.omdbapi.com/
+//https://stackoverflow.com/questions/33864769/how-to-get-data-from-omdb-api-web-service
 
 // movie-this
 
@@ -22,7 +23,7 @@ function movieThis(userInput) {
             console.log("Country: " + body.Country);
             console.log("Language: " + body.Language);
             console.log("Plot: " + body.Plot);
-            console.log("Actors: " + body.Actors);
+            console.log("Actors/Actresses: " + body.Actors);
         } else {
             console.log("There's an error" + error);
         }
